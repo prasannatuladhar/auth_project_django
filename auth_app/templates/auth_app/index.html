@@ -1,0 +1,25 @@
+{% extends 'auth_app/base.html' %}
+
+{% block title %}
+Home Page| Django Auth
+{% endblock %}
+
+
+{% block content %}
+
+
+<h2>Hi {{user.first_name}} {{user.last_name}}</h2>
+   {% if user.is_authenticated %}
+   <p>Email: {{user.email}}</p> 
+   <p>Username: {{user.username}}</p> 
+   
+
+    
+   {% else %}  
+   {% endif %}   
+
+
+
+
+
+{% endblock %}
